@@ -131,7 +131,7 @@
                                     ?>
                                     <li>
                                         <img src="makina/champs/<?php echo $row['image']; ?>" alt="User Image">
-                                        <a class="users-list-name" href="#"><?php echo $row['jina']; ?></a>
+                                        <a class="users-list-name" href="profile/makina.php"><?php echo $row['name']; ?></a>
                                         <span class="users-list-date"><?php echo $row['age']; ?></span>
                                     </li>
                                 <?php }?>
@@ -170,48 +170,57 @@
                                     <th></th>
 
                                 </tr>
+                                <?php
+
+                                $query = $conn->query("select * from profile_tbl where page='makina'") or die(mysql_error());
+                                while ($row = $query->fetch()) {
+
+
+                                    ?>
                                 <tr>
                                     <td>1.</td>
                                     <td>Area coverage</td>
 
-                                    <td><span class="badge bg-red">55 KM<sup>2</sup></span></td>
+                                    <td><span class="badge bg-red"><?php echo $row['area']; ?> KM<sup>2</sup></span></td>
                                 </tr>
                                 <tr>
                                     <td>2.</td>
                                     <td>Population</td>
 
-                                    <td><span class="badge bg-yellow">70,123</span></td>
+                                    <td><span class="badge bg-yellow"><?php echo $row['population']; ?></span></td>
                                 </tr>
                                 <tr>
                                     <td>3.</td>
                                     <td>Number of villages</td>
 
-                                    <td><span class="badge bg-light-blue">11</span></td>
+                                    <td><span class="badge bg-light-blue"><?php echo $row['village']; ?></span></td>
                                 </tr>
 
                                 <tr>
                                     <td>4.</td>
                                     <td>Ward development fund (2017/2018)</td>
 
-                                    <td><span class="badge bg-red">21,345,567</span></td>
+                                    <td><span class="badge bg-red">Ksh. <?php echo $row['fund']; ?></span></td>
                                 </tr>
                                 <tr>
                                     <td>5.</td>
                                     <td>Name of MCA</td>
 
-                                    <td><span class="badge bg-purple">Benazir Omotto</span></td>
+                                    <td><span class="badge bg-purple"><?php echo $row['mca']; ?></span></td>
                                 </tr>
+
                                 <tr>
                                     <td>6.</td>
                                     <td>Name of ward Admin</td>
 
-                                    <td><span class="badge bg-yellow">Omotto Benazir</span></td>
+                                    <td><span class="badge bg-yellow"><?php echo $row['admin']; ?></span></td>
                                 </tr>
+                                <?php }?>
                             </table>
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer text-center">
-                            <a href="#" class="uppercase">Read More</a>
+                            <a href="profile/makina.php" class="uppercase">Read More</a>
                         </div>
                         <!-- /.box-footer-->
                     </div>
