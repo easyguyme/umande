@@ -58,106 +58,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
 
+                                $query = $conn->query("select * from plans_county where page='makina'") or die(mysql_error());
+                                while ($row = $query->fetch()) {
+
+
+                                ?>
                                 <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
+                                    <td><?php echo $row['id']; ?>.</td>
+                                    <td><?php echo $row['type']; ?></td>
+                                    <td><?php echo $row['period']; ?></td>
+                                    <td><?php echo $row['location']; ?></td>
+                                    <td>Ksh. <?php echo $row['budget']; ?></td>
 
 
                                 </tr>
 
+                                <?php }?>
                                 </tbody>
                             </table>
 
@@ -193,50 +111,21 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
 
+                                $query = $conn->query("select * from plan_comm where page='makina'") or die(mysql_error());
+                                while ($row = $query->fetch()) {
+
+
+                                ?>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
+                                    <td><?php echo $row['id']; ?>.</td>
+                                    <td><?php echo $row['prior']; ?></td>
+                                    <td><?php echo $row['description']; ?></td>
 
                                 </tr>
 
+                                <?php }?>
 
 
                                 </tbody>
@@ -259,10 +148,14 @@
                     </h1>
                     <!-- The time line -->
                     <ul class="timeline">
-                        <!-- timeline time label -->
+                        <?php
+                        $query = $conn->query("select * from downloads order by date desc limit 3");
+                        while ($row = $query->fetch()) {
+
+                        ?>
                         <li class="time-label">
                   <span class="bg-red">
-                    10 Feb. 2014
+                   <?php echo $row['date']; ?>
                   </span>
                         </li>
                         <!-- /.timeline-label -->
@@ -273,21 +166,18 @@
                             <div class="timeline-item">
                                 <span class="time">Posted by: <i class="fa fa-user"></i> Admin</span>
 
-                                <h3 class="timeline-header"><a href="#">Newsletter</a> Download our monthly newsketter</h3>
+                                <h3 class="timeline-header"><a href="#"><?php echo $row['name']; ?></a> <?php echo $row['sub']; ?></h3>
 
                                 <div class="timeline-body">
-                                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-                                    weebly ning heekya handango imeem plugg dopplr jibjab, movity
-                                    jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-                                    quora plaxo ideeli hulu weebly balihoo...
+                                    <?php echo $row['des']; ?>
                                 </div>
                                 <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Download</a>
+                                    <a href="<?php echo $row['link']; ?>" class="btn btn-primary btn-xs" target="_blank">Download</a>
 
                                 </div>
                             </div>
                         </li>
-                        <!-- END timeline item -->
+                        <?php } ?>
                         <!-- timeline item -->
 
                     </ul>
