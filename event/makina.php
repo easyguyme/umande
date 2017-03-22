@@ -58,106 +58,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
 
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
+                                $query = $conn->query("select * from events where page='makina'") or die(mysql_error());
+                                while ($row = $query->fetch()) {
 
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
 
-                                </tr>
+                                ?>
                                 <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
-
-                                </tr>
-                                <tr>
-                                    <td>1.
-                                    </td>
-                                    <td>Facebook Live
-                                    </td>
-                                    <td>Facebook
-                                    </td>
-                                    <td>02/03/2017
-                                    </td>
-                                    <td>12:45 pm
-                                    </td>
-                                    <td>Cancelled</td>
+                                    <td><?php echo $row['id']; ?>.</td>
+                                    <td><?php echo $row['name']; ?></td>
+                                    <td><?php echo $row['venue']; ?></td>
+                                    <td><?php echo $row['date']; ?></td>
+                                    <td><?php echo $row['time']; ?></td>
+                                    <td><?php echo $row['status']; ?></td>
 
                                 </tr>
 
+                                <?php }?>
                                 </tbody>
                             </table>
 
@@ -193,50 +111,22 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
 
+                                $query = $conn->query("select * from events where page='makina'") or die(mysql_error());
+                                while ($row = $query->fetch()) {
+
+
+                                ?>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>Facebook Live</td>
-                                    <td>Facebook Event will be officiated by His excellency the ...............</td>
+                                    <td><?php echo $row['id']; ?>.</td>
+                                    <td><?php echo $row['name']; ?></td>
+                                    <td><?php echo $row['description']; ?></td>
 
 
                                 </tr>
 
+                                <?php }?>
 
 
                                 </tbody>
