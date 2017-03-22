@@ -60,7 +60,7 @@
                         <div class="widget-user-header bg-red">
 
                             <!-- /.widget-user-image -->
-                            <h3 class="widget-user-username"><a href="#" style="color: white;">PROJECT PRIORITIES</a></h3>
+                            <h3 class="widget-user-username"><a href="../prior.php" style="color: white;">PROJECT PRIORITIES</a></h3>
 
                         </div>
                         <div class="box-footer no-padding">
@@ -84,15 +84,15 @@
                         <div class="widget-user-header bg-green">
 
                             <!-- /.widget-user-image -->
-                            <h3 class="widget-user-username"><a href="#" style="color: white;">DEVELOPMENT PROJECTS</a></h3>
+                            <h3 class="widget-user-username"><a href="../dev/makina.php" style="color: white;">DEVELOPMENT PROJECTS</a></h3>
 
                         </div>
                         <div class="box-footer no-padding">
                             <ul class="nav nav-stacked">
-                                <li><a href="#">Ongoing Projects <span class="pull-right badge bg-blue"></sup></span></a></li>
-                                <li><a href="#">Planned Projects <span class="pull-right badge bg-aqua"></a></li>
-                                <li><a href="#">Projects Implementers <span class="pull-right badge bg-green"></sup></span></a></li>
-                                <li><a href="#">Projects Status<span class="pull-right badge bg-red"></a></li>
+                                <li><a href="../dev/makina.php">Ongoing Projects <span class="pull-right badge bg-blue"></sup></span></a></li>
+                                <li><a href="../dev/makina.php">Planned Projects <span class="pull-right badge bg-aqua"></a></li>
+                                <li><a href="../dev/makina.php">Projects Implementers <span class="pull-right badge bg-green"></sup></span></a></li>
+                                <li><a href="../dev/makina.php">Projects Status<span class="pull-right badge bg-red"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -106,18 +106,18 @@
                         <div class="widget-user-header bg-aqua">
 
                             <!-- /.widget-user-image -->
-                            <h3 class="widget-user-username"><a href="#" style="color: white;">BUDGET ALLOCATIONS</a></h3>
+                            <h3 class="widget-user-username"><a href="../budget/makina.php" style="color: white;">BUDGET ALLOCATIONS</a></h3>
 
                         </div>
                         <div class="box-footer no-padding">
                             <ul class="nav nav-stacked">
-                                <li><a href="#">Budget Allocation <span class="pull-right badge bg-blue">Millions</sup></span></a></li>
-                                <li><a href="#"> <span class="pull-right badge bg-aqua"></span></a></li>
-                                <li><a href="#"> <span class="pull-right badge bg-green"></span></a></li>
-                                <li><a href="#"><span class="pull-right badge bg-red"></span></a></li>
-                                <li><a href="#"> <span class="pull-right badge bg-aqua"></span></a></li>
-                                <li><a href="#"> <span class="pull-right badge bg-green"></span></a></li>
-                                <li><a href="#"><span class="pull-right badge bg-red"></span></a></li>
+                                <li><a href="../budget/makina.php">Budget Allocation <span class="pull-right badge bg-blue">Millions</sup></span></a></li>
+                                <li><a href="../budget/makina.php"> <span class="pull-right badge bg-aqua"></span></a></li>
+                                <li><a href="../budget/makina.php"> <span class="pull-right badge bg-green"></span></a></li>
+                                <li><a href="../budget/makina.php"><span class="pull-right badge bg-red"></span></a></li>
+                                <li><a href="../budget/makina.php"> <span class="pull-right badge bg-aqua"></span></a></li>
+                                <li><a href="../budget/makina.php"> <span class="pull-right badge bg-green"></span></a></li>
+                                <li><a href="../budget/makina.php"><span class="pull-right badge bg-red"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -132,62 +132,7 @@
                 <!-- /.col -->
             </div>
             <div class="row">
-                <h2 class="page-header text-center"><dt>OUR PARTNERS</dt></h2>
-                <div class="box-default">
-                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
-                        <!-- Loading Screen -->
-                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('scroller/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                        </div>
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
-                            <div>
-                                <img data-u="image" src="../scroller/img/13.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/14.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/12.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/11.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/10.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/9.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/8.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/7.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/6.PNG" />
-                            </div>
-                            <a data-u="any" href="http://www.jssor.com" style="display:none">Our Partners</a>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/5.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/4.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/3.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/1.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/2.PNG" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              <?php include ('partners.php');?>
             </div>
 
             <!-- /.row -->
@@ -206,79 +151,6 @@
     </footer>
 
     <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <!-- Home tab content -->
-            <div class="tab-pane" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">Recent Activity</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                                <p>Will be 23 on April 24th</p>
-                            </div>
-                        </a>
-                    </li>
-
-
-
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-
-                <!-- /.control-sidebar-menu -->
-
-            </div>
-            <!-- /.tab-pane -->
-
-            <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Some information about this general settings option
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-                </form>
-            </div>
-            <!-- /.tab-pane -->
-        </div>
-    </aside>
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->

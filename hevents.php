@@ -37,7 +37,7 @@
                 <tr>
                     <td><?php echo $row['event']; ?></td>
                     <td><?php echo $row['venue']; ?></td>
-                    <td><?php echo $row['sday']; ?>/<?php echo $row['smonth']; ?>/<?php echo $row['syear']; ?></td>
+                    <td><?php echo $row['sdate']; ?></td>
                     <td><?php echo $row['edate']; ?></td>
                     <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
 

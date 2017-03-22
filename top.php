@@ -36,36 +36,22 @@
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
-                        <li class="user-header">
-                            <img src="dist/img/logo.jpg"  alt="User Image">
-
+                        <li class="user-header" style="height: 265px;">
+                            <dt>Introduction to Making All Voices Count</dt>
                             <p>
-                                Making All Voices Count
-                                <small>A grand challenge for development</small>
+
+                                <small>Making All Voices Count is a global initiative that supports innovation, scaling, with the goal of promoting transparency, fighting corruption, empowering marginalised citizens, and harnessing the power of new technologies to make government more effective and accountable. Making All Voices Count acknowledges that important new opportunities are emerging to use mobile and internet technologies to close the gap between citizens and governments: through wider information availability, more opportunities to express citizen demands, and new ways to enable citizens to work together and with government.</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">About</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Contacts</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </li>
+
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="http://umande.org" class="btn btn-default btn-flat">Website</a>
+                                <a href="http://www.makingallvoicescount.org/" class="btn btn-default btn-flat">Website</a>
                             </div>
                             <div class="pull-right">
-                                <a href="http://umandetrust.blogspot.co.ke" class="btn btn-default btn-flat">Blog</a>
+                                <a href="http://www.makingallvoicescount.org/blog/" class="btn btn-default btn-flat">Blog</a>
                             </div>
                         </li>
                     </ul>

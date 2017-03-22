@@ -201,7 +201,7 @@
                             {
 
                                 $title = $row['title'];
-                                $desc = $row['dscn'];
+                                $desc = $row['desc'];
                                 $image = $row['image'];
                                 if($counter == 0)
                                 {
@@ -290,118 +290,113 @@
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab_1">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example22">
+
+                                                        <thead>
+                                                        <tr>
+
+                                                            <th><span class="badge bg-light-blue">Project Name</span></th>
+                                                            <th><span class="badge bg-red">Budget Description</span></th>
+                                                            <th><span class="badge bg-purple">Percentage completed</span></th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <?php
                                                         $query = $conn->query("select * from makinacurrent where type='county'");
                                                         while ($row = $query->fetch()) {
 
                                                         ?>
-                                                        <li class="item">
+                                                        <tr>
 
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
-                                                                <?php }?>
-                                                            </div>
-                                                        </li>
+                                                            <td><?php echo $row['name']; ?>.</td>
+                                                            <td><?php echo $row['des']; ?></td>
+                                                            <td> <span class="label label-warning "><?php echo $row['per']; ?> Complete</span></a></td>
+                                                            <?php }?>
 
-                                                        <!-- /.item -->
+                                                        </tr>
 
-                                                        <!-- /.item -->
 
-                                                        <!-- /.item -->
 
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
+                                                        </tbody>
+                                                    </table>
+
                                                 </div>
                                             </div>
                                             <!-- /.tab-pane -->
                                             <div class="tab-pane" id="tab_2">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example23">
+
+                                                        <thead>
+                                                        <tr>
+
+                                                            <th><span class="badge bg-light-blue">Project Name</span></th>
+                                                            <th><span class="badge bg-red">Budget Description</span></th>
+                                                            <th><span class="badge bg-purple">Percentage completed</span></th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <?php
                                                         $query = $conn->query("select * from makinacurrent where type='ngo'");
                                                         while ($row = $query->fetch()) {
 
                                                         ?>
-                                                        <li class="item">
+                                                        <tr>
 
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
-                                                                <?php }?>
-                                                            </div>
-                                                        </li>
+                                                            <td><?php echo $row['name']; ?>.</td>
+                                                            <td><?php echo $row['des']; ?></td>
+                                                            <td> <span class="label label-warning "><?php echo $row['per']; ?> Complete</span></a></td>
+                                                            <?php }?>
 
-                                                        <!-- /.item -->
+                                                        </tr>
 
-                                                        <!-- /.item -->
 
-                                                        <!-- /.item -->
 
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
+                                                        </tbody>
+                                                    </table>
+
                                                 </div>
                                             </div>
                                             <!-- /.tab-pane -->
                                             <div class="tab-pane" id="tab_3">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example24">
+
+                                                        <thead>
+                                                        <tr>
+
+                                                            <th><span class="badge bg-light-blue">Project Name</span></th>
+                                                            <th><span class="badge bg-red">Budget Description</span></th>
+                                                            <th><span class="badge bg-purple">Percentage completed</span></th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <?php
                                                         $query = $conn->query("select * from makinacurrent where type='cbo'");
                                                         while ($row = $query->fetch()) {
 
                                                         ?>
-                                                        <li class="item">
+                                                        <tr>
 
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
+                                                            <td><?php echo $row['name']; ?>.</td>
+                                                            <td><?php echo $row['des']; ?></td>
+                                                            <td> <span class="label label-warning "><?php echo $row['per']; ?> Complete</span></a></td>
+                                                            <?php }?>
 
-                                                                <?php }?>
-                                                            </div>
+                                                        </tr>
 
-                                                        </li>
 
-                                                        <!-- /.item -->
 
-                                                        <!-- /.item -->
+                                                        </tbody>
+                                                    </table>
 
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
                                                 </div>
                                             </div>
                                             <!-- /.tab-pane -->
@@ -448,42 +443,39 @@
                                             <div class="tab-pane active" id="county">
 
                                                 <!-- /.box-header -->
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example25">
+
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Start date</th>
+                                                            <th>End date</th>
+                                                            <th>Status</th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <?php
+                                                        $query = $conn->query("select * from makina_cproject where org='county'");
+                                                        while ($row = $query->fetch()) {
+                                                            $id = $row['id'];
+                                                            ?>
                                                             <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
+                                                                <td><?php echo $row['name']; ?></td>
+                                                                <td><?php echo $row['sdate']; ?></td>
+                                                                <td><?php echo $row['edate']; ?></td>
+                                                                <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
 
                                                             </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='county'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
+                                                        <?php } ?>
+                                                        </tbody>
+                                                    </table>
 
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
                                                 </div>
                                                 <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
 
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
                                                 <!-- /.box-body -->
 
                                             </div>
@@ -491,84 +483,78 @@
                                             <div class="tab-pane" id="ngo">
 
                                                 <!-- /.box-header -->
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example26">
+
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Start date</th>
+                                                            <th>End date</th>
+                                                            <th>Status</th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <?php
+                                                        $query = $conn->query("select * from makina_cproject where org='ngo'");
+                                                        while ($row = $query->fetch()) {
+                                                            $id = $row['id'];
+                                                            ?>
                                                             <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
+                                                                <td><?php echo $row['name']; ?></td>
+                                                                <td><?php echo $row['sdate']; ?></td>
+                                                                <td><?php echo $row['edate']; ?></td>
+                                                                <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
 
                                                             </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='ngo'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
+                                                        <?php } ?>
+                                                        </tbody>
+                                                    </table>
 
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
                                                 </div>
                                                 <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
 
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
                                                 <!-- /.box-footer -->
                                             </div>
 
                                             <!-- /.tab-pane -->
                                             <div class="tab-pane" id="cbo">
 
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
+                                                <div class="box-body table-responsive">
+
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example27">
+
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Start date</th>
+                                                            <th>End date</th>
+                                                            <th>Status</th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <?php
+                                                        $query = $conn->query("select * from makina_cproject where org='cbo'");
+                                                        while ($row = $query->fetch()) {
+                                                            $id = $row['id'];
+                                                            ?>
                                                             <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
+                                                                <td><?php echo $row['name']; ?></td>
+                                                                <td><?php echo $row['sdate']; ?></td>
+                                                                <td><?php echo $row['edate']; ?></td>
+                                                                <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
 
                                                             </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='cbo'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
+                                                        <?php } ?>
+                                                        </tbody>
+                                                    </table>
 
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
                                                 </div>
                                                 <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
 
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
 
 
                                                 <!-- /.box-body -->
@@ -639,6 +625,60 @@
 <script>
     $(function () {
         $("#example1").DataTable();
+        $('#example22').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
+        $('#example23').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
+        $('#example24').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
+        $('#example25').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
+        $('#example26').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
+        $('#example27').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "lengthMenu": [[3, 10, 20, -1], [3, 10, 20, "All"]],
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true
+        });
         $('#example2').DataTable({
             "paging": true,
             "lengthChange": true,

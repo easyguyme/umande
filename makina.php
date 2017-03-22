@@ -36,7 +36,7 @@
 
 
                             <span class="info-box-number"><strong><a href="project/makina.php" class="uppercase">Projects</a></strong></span>
-                            <span class="info-box-number" style="font-size: x-small;"><a href="project/makina.php" class="uppercase">Complete | Current | Planned</a></span>
+                            <span class="info-box-number" style="font-size: x-small;"><a href="project/makina.php" class="uppercase">Complete | Current </a></span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -188,26 +188,21 @@
 
                                     <td><span class="badge bg-light-blue">11</span></td>
                                 </tr>
+
                                 <tr>
                                     <td>4.</td>
-                                    <td>Name of villages</td>
-
-                                    <td><span class="badge bg-green">This  won't fit</span></td>
-                                </tr>
-                                <tr>
-                                    <td>5.</td>
                                     <td>Ward development fund (2017/2018)</td>
 
                                     <td><span class="badge bg-red">21,345,567</span></td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
+                                    <td>5.</td>
                                     <td>Name of MCA</td>
 
                                     <td><span class="badge bg-purple">Benazir Omotto</span></td>
                                 </tr>
                                 <tr>
-                                    <td>7.</td>
+                                    <td>6.</td>
                                     <td>Name of ward Admin</td>
 
                                     <td><span class="badge bg-yellow">Omotto Benazir</span></td>
@@ -265,7 +260,7 @@
                             {
 
                                 $title = $row['title'];
-                                $desc = $row['dscn'];
+                                $desc = $row['desc'];
                                 $image = $row['image'];
                                 if($counter == 0)
                                 {
@@ -345,79 +340,7 @@
 
     <?php include('footer.php'); ?>
     <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <!-- Home tab content -->
-            <div class="tab-pane" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">Recent Activity</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                                <p>Will be 23 on April 24th</p>
-                            </div>
-                        </a>
-                    </li>
-
-
-
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-
-                <!-- /.control-sidebar-menu -->
-
-            </div>
-            <!-- /.tab-pane -->
-
-            <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Some information about this general settings option
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-
-
-                    <!-- /.form-group -->
-                </form>
-            </div>
-            <!-- /.tab-pane -->
-        </div>
-    </aside>
+    
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
@@ -425,9 +348,9 @@
 
 </div>
 <!-- ./wrapper -->
-
+<?php include('hscripts.php'); ?>
 <!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+
 <!-- Bootstrap 3.3.6 -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- FastClick -->

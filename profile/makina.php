@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <?php include('header.php'); ?>
-
-<link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css">
 <body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
@@ -16,641 +14,568 @@
         <section class="content-header">
             <h1>
                 Women Voices, ICT Choices |
-                MAKINA Ward | Projects
+                MAKINA Ward | Women Profiles
                 <small>Version 1.0</small>
 
             </h1>
             <ol class="breadcrumb">
-                <li><a href="../index.php"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="makina.php"><i class="fa  fa-sticky-note"></i> Makina</a></li>
-                <li class="active">Projects</li>
+                <li class="active">Women Profiles
+                </li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-            <!-- Top Info boxes -->
+
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-3">
+
+                    <!-- Profile Image -->
                     <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title"><dt>Social Audit</dt></h3>
+                        <div class="box-body box-profile">
+                            <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
+                            <h3 class="profile-username text-center">Benazir Omotto</h3>
 
-                        <div class="box-body table-responsive">
-
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example2">
-
-                                <thead>
-                                <tr>
-
-                                    <th><span class="badge bg-light-blue">Project Name</span></th>
-                                    <th><span class="badge bg-red">Social Audit Stage</span></th>
-                                    <th><span class="badge bg-green">Stake Holders Involved</span></th>
-                                    <th><span class="badge bg-purple">Findings</span></th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.
-                                    </td>
-                                    <td>Here are the latest insights about your Facebook Pages.</td>
-
-                                </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="col-md-5">
-                    <div class="box box-warning">
-                        <div class="box-header with-border">
-                            <h3 class="box-title"><dt>Project Audited Gallery</dt></h3>
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        -
-                        <!-- /.box-header -->
-                        <div class="box box-solid">
-
-                            <!-- /.box-header -->
-                            <style>
-
-
-                                .carousel-inner>.item>img, .carousel-inner>.item>a>img
-                                {
-                                    height:300px;
-                                    width:700px;
-                                }
-
-                            </style>
-                            <?php
-
-
-
-
-                            $query = $conn->query("select * from magallery") or die(mysql_error());
-                            $count = $query->rowcount();
-                            $slides='';
-                            $Indicators='';
-                            $counter=0;
-
-                            while ($row = $query->fetch())
-                            {
-
-                                $title = $row['title'];
-                                $desc = $row['dscn'];
-                                $image = $row['image'];
-                                if($counter == 0)
-                                {
-                                    $Indicators .='<li data-target="#carousel-example-generic" data-slide-to="'.$counter.'" class="active"></li>';
-                                    $slides .= '<div class="item active">
-            <img src="../makina/'.$image.'" alt="'.$title.'" />
-            <div class="carousel-caption">
-              <h3>'.$title.'</h3>
-              <p>'.$desc.'.</p>
-            </div>
-          </div>';
-
-                                }
-                                else
-                                {
-                                    $Indicators .='<li data-target="#carousel-example-generic" data-slide-to="'.$counter.'"></li>';
-                                    $slides .= '<div class="item">
-            <img src="../makina/'.$image.'" alt="'.$title.'" />
-            <div class="carousel-caption">
-              <h3>'.$title.'</h3>
-              <p>'.$desc.'.</p>
-            </div>
-          </div>';
-                                }
-                                $counter++;
-                            }
-
-                            ?>
-                            <div class="box-body">
-                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <?php echo $Indicators; ?>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <?php echo $slides; ?>
-                                    </div>
-
-                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                    </a>
+                            <p class="text-muted text-center">Ward Leader</p>
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title"><dt>About Me</dt></h3>
                                 </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <strong><i class="fa fa-comment margin-r-1"></i> Bio</strong>
+
+                                    <p class="text-muted">
+                                        I am an outspoken bla bla bla
+                                    </p>
+
+                                    <hr>
+                                    <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                    <p class="text-muted">
+                                        B.S. in Computer Science from the University of Tennessee at Knoxville
+                                    </p>
+
+                                    <hr>
+
+                                    <strong><i class="fa fa-circle-o-notch margin-r-5"></i> Age</strong>
+
+                                    <span class="label label-danger">21</span>
+
+                                    <hr>
+
+
+                                    <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                    <p class="text-muted">Makina, Kibera</p>
+
+                                    <hr>
+                                    <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                    <p>
+                                        <span class="label label-danger">programming</span>
+                                        <span class="label label-success">Cooking</span>
+                                        <span class="label label-info">Project management</span>
+
+                                    </p>
+                                    <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                    <p>
+                                        <span class="label label-danger">Swimming</span>
+                                        <span class="label label-success">Cooking</span>
+                                        <span class="label label-info">Travelling</span>
+                                        <span class="label label-warning">Driving</span>
+                                        <span class="label label-primary">Camping</span>
+
+                                    </p>
+
+                                </div>
+                                <!-- /.box-body -->
                             </div>
-                            <!-- /.box-body -->
+
                         </div>
                         <!-- /.box-body -->
-                        <div class="box-footer text-center">
-                            <a href="../profile/makina.php" class="uppercase">View More</a>
-                        </div>
                     </div>
                     <!-- /.box -->
 
+                    <!-- About Me Box -->
+
+                    <!-- /.box -->
                 </div>
-
                 <!-- /.col -->
-            </div>
-            <!-- /.row -->
-            <!-- Top row -->
-            <div class="row">
+                <div class="col-md-9">
 
-                <!-- /.col -->
-                <div class="col-md-6">
-                    <div class="box box-danger">
-                        <div class="box-header with-border">
-                            <h3 class="box-title"><dt>Current Projects</dt></h3>
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#activity" data-toggle="tab">Briefing</a></li>
+                            <li><a href="#timeline" data-toggle="tab">Women Profiles</a></li>
+                            <li><a href="#information" data-toggle="tab">Voice Center Info</a></li>
+                           
+                        </ul>
+                        <div class="tab-content">
+                            <div class="active tab-pane" id="activity">
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- Custom Tabs -->
-                                    <div class="nav-tabs-custom">
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#tab_1" data-toggle="tab">County Government Projects</a></li>
-                                            <li><a href="#tab_2" data-toggle="tab">N.G.O Projects</a></li>
-                                            <li><a href="#tab_3" data-toggle="tab">C.B.O Projects</a></li>
 
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="tab_1">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
-                                                        <?php
-                                                        $query = $conn->query("select * from makinacurrent where type='county'");
-                                                        while ($row = $query->fetch()) {
+                                <div class="box box-solid">
+                                    <div class="box-header with-border">
+                                        <i class="fa fa-book"></i>
 
-                                                        ?>
-                                                        <li class="item">
-
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
-                                                                <?php }?>
-                                                            </div>
-                                                        </li>
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                            </div>
-                                            <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="tab_2">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
-                                                        <?php
-                                                        $query = $conn->query("select * from makinacurrent where type='ngo'");
-                                                        while ($row = $query->fetch()) {
-
-                                                        ?>
-                                                        <li class="item">
-
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
-                                                                <?php }?>
-                                                            </div>
-                                                        </li>
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                            </div>
-                                            <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="tab_3">
-                                                <div class="box-body">
-                                                    <ul class="products-list product-list-in-box">
-                                                        <?php
-                                                        $query = $conn->query("select * from makinacurrent where type='cbo'");
-                                                        while ($row = $query->fetch()) {
-
-                                                        ?>
-                                                        <li class="item">
-
-                                                            <div class="product-img">
-                                                                <img src="../dist/img/p.png" alt="Product Image">
-                                                            </div>
-                                                            <div class="product-info">
-                                                                <a href="javascript:void(0)" class="product-title"><?php echo $row['name']; ?>
-                                                                    <span class="label label-warning pull-right"><?php echo $row['per']; ?> Complete</span></a>
-                                                                <div class="progress progress-xxs">
-                                                                    <div class="progress-bar progress-bar-danger" style="width: <?php echo $row['per']; ?>"></div>
-                                                                </div>
-                        <span class="product-description">
-                          <?php echo $row['des']; ?>
-                        </span>
-
-                                                                <?php }?>
-                                                            </div>
-
-                                                        </li>
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-
-                                                        <!-- /.item -->
-                                                    </ul>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                            </div>
-                                            <!-- /.tab-pane -->
-                                        </div>
-                                        <!-- /.tab-content -->
+                                        <h3 class="box-title"><dt>Women’s Voices ICT Briefing </dt></h3>
                                     </div>
-                                    <!-- nav-tabs-custom -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.box-body -->
-
-                        <!-- /.footer -->
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <h3 class="box-title"><dt>Completed Projects</dt></h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- Custom Tabs -->
-                                    <div class="nav-tabs-custom">
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#county" data-toggle="tab">County Government Projects</a></li>
-                                            <li><a href="#ngo" data-toggle="tab">N.G.O Projects</a></li>
-                                            <li><a href="#cbo" data-toggle="tab">C.B.O Projects</a></li>
-
-
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="county">
-
-                                                <!-- /.box-header -->
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
-
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='county'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
-
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                                <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
-
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
-                                                <!-- /.box-body -->
-
-                                            </div>
-                                            <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="ngo">
-
-                                                <!-- /.box-header -->
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
-
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='ngo'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
-
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                                <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
-
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
-                                                <!-- /.box-footer -->
-                                            </div>
-
-                                            <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="cbo">
-
-                                                <div class="box-body">
-                                                    <div class="table-responsive">
-                                                        <table class="table no-margin">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Name</th>
-                                                                <th>Start date</th>
-                                                                <th>End date</th>
-                                                                <th>Status</th>
-
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <?php
-                                                            $query = $conn->query("select * from makina_cproject where org='cbo'");
-                                                            while ($row = $query->fetch()) {
-                                                                $id = $row['id'];
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $row['name']; ?></td>
-                                                                    <td><?php echo $row['sdate']; ?></td>
-                                                                    <td><?php echo $row['edate']; ?></td>
-                                                                    <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
-
-                                                                </tr>
-                                                            <?php } ?>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.table-responsive -->
-                                                </div>
-                                                <!-- /.box-body -->
-                                                <div class="box-footer clearfix">
-
-                                                    <a href="#" class="btn btn-sm btn-success  center-block">View All complete Projects</a>
-                                                </div>
-
-
-                                                <!-- /.box-body -->
-
-                                            </div>
-                                            <!-- /.tab-pane -->
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <div class="col-sm-3">
+                                            <img class="img-responsive" src="../dist/img/Star.JPG" alt="Photo">
                                         </div>
-                                        <!-- /.tab-content -->
+                                        <div class="col-sm-9">
+                                            <dl>
+
+                                                <dd>There is a gap in gender representation among the people of Kibera in regards to having the women’s voices heard on issues involving their community and the society they live in.  This project, Women’s Voices, seeks to capture women’s views and ideas about county development, and make sure, these ideas are shared with the relevant authorities. It looks to address four main themes of governance, transparency, accountability, and anti-corruption. To do this, we plan to train women in the community to be representatives of the rest of the community, called women voices champions. These women will be in charge of collection and analyzing data from and about the community as well as other administrative work. The women will also be in charge of updating a dashboard that connects the project to the community and the rest of the world through social media, and updating the dashboard with real time information about what is happening in the community. The information they work to collect and present will be shared with the relevant county officials, so they can put the community’s thoughts into action. The women’s voices champions will help to give voice to other female members of the community whose ideas and opinions may not have been able to be shared without this project. Women’s Voices will be run through four of Kibera’s bio-sanitation facilities since they are already a focal point for men and women in the community. </dd>
+
+                                            </dl>
+                                        </div>
+
                                     </div>
-                                    <!-- nav-tabs-custom -->
+                                    <!-- /.box-body -->
                                 </div>
-                                <!-- /.col -->
                             </div>
-                            <!-- /.row -->
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="timeline">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="box box-primary">
+                                            <div class="box-body box-profile">
+                                                <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
+
+                                                <h3 class="profile-username text-center">Benazir Omotto</h3>
+
+                                                <p class="text-muted text-center">Woman champion</p>
+                                                <div class="box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">About Me</h3>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                                        <p class="text-muted">
+                                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                                        </p>
+
+                                                        <hr>
+
+                                                        <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                        <p class="text-muted">Makina, Kibera</p>
+
+                                                        <hr>
+                                                        <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                                        <p>
+                                                            <span class="label label-danger">programming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Project management</span>
+
+                                                        </p>
+                                                        <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                                        <p>
+                                                            <span class="label label-danger">Swimming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Travelling</span>
+                                                            <span class="label label-warning">Driving</span>
+                                                            <span class="label label-primary">Camping</span>
+
+                                                        </p>
+
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box box-primary">
+                                            <div class="box-body box-profile">
+                                                <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
+
+                                                <h3 class="profile-username text-center">Benazir Omotto</h3>
+
+                                                <p class="text-muted text-center">Woman champion</p>
+                                                <div class="box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">About Me</h3>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                                        <p class="text-muted">
+                                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                                        </p>
+
+                                                        <hr>
+
+                                                        <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                        <p class="text-muted">Makina, Kibera</p>
+
+                                                        <hr>
+                                                        <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                                        <p>
+                                                            <span class="label label-danger">programming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Project management</span>
+
+                                                        </p>
+                                                        <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                                        <p>
+                                                            <span class="label label-danger">Swimming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Travelling</span>
+                                                            <span class="label label-warning">Driving</span>
+                                                            <span class="label label-primary">Camping</span>
+
+                                                        </p>
+
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+
+                                </div> <!-- The timeline -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="box box-primary">
+                                            <div class="box-body box-profile">
+                                                <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
+
+                                                <h3 class="profile-username text-center">Benazir Omotto</h3>
+
+                                                <p class="text-muted text-center">Woman champion</p>
+                                                <div class="box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">About Me</h3>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                                        <p class="text-muted">
+                                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                                        </p>
+
+                                                        <hr>
+
+                                                        <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                        <p class="text-muted">Makina, Kibera</p>
+
+                                                        <hr>
+                                                        <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                                        <p>
+                                                            <span class="label label-danger">programming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Project management</span>
+
+                                                        </p>
+                                                        <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                                        <p>
+                                                            <span class="label label-danger">Swimming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Travelling</span>
+                                                            <span class="label label-warning">Driving</span>
+                                                            <span class="label label-primary">Camping</span>
+
+                                                        </p>
+
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box box-primary">
+                                            <div class="box-body box-profile">
+                                                <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
+
+                                                <h3 class="profile-username text-center">Benazir Omotto</h3>
+
+                                                <p class="text-muted text-center">Woman champion</p>
+                                                <div class="box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">About Me</h3>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body">
+                                                        <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                                        <p class="text-muted">MySQL - umande@localhost
+                                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                                        </p>
+
+                                                        <hr>
+
+                                                        <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                        <p class="text-muted">Makina, Kibera</p>
+
+                                                        <hr>
+                                                        <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                                        <p>
+                                                            <span class="label label-danger">programming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Project management</span>
+
+                                                        </p>
+                                                        <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                                        <p>
+                                                            <span class="label label-danger">Swimming</span>
+                                                            <span class="label label-success">Cooking</span>
+                                                            <span class="label label-info">Travelling</span>
+                                                            <span class="label label-warning">Driving</span>
+                                                            <span class="label label-primary">Camping</span>
+
+                                                        </p>
+
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-3">
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="box box-primary">
+                                                <div class="box-body box-profile">
+                                                    <img class="profile-user-img img-responsive img-circle" src="../dist/img/pp.jpg" alt="User profile picture">
+
+                                                    <h3 class="profile-username text-center">Benazir Omotto</h3>
+
+                                                    <p class="text-muted text-center">Woman champion</p>
+                                                    <div class="box box-primary">
+                                                        <div class="box-header with-border">
+                                                            <h3 class="box-title">About Me</h3>
+                                                        </div>
+                                                        <!-- /.box-header -->
+                                                        <div class="box-body">
+                                                            <strong><i class="fa fa-university margin-r-1"></i> Education</strong>
+
+                                                            <p class="text-muted">MySQL - umande@localhost
+                                                                B.S. in Computer Science from the University of Tennessee at Knoxville
+                                                            </p>
+
+                                                            <hr>
+
+                                                            <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                            <p class="text-muted">Makina, Kibera</p>
+
+                                                            <hr>
+                                                            <strong><i class="fa fa-wrench margin-r-5"></i> Skills</strong><br>
+                                                            <p>
+                                                                <span class="label label-danger">programming</span>
+                                                                <span class="label label-success">Cooking</span>
+                                                                <span class="label label-info">Project management</span>
+
+                                                            </p>
+                                                            <strong><i class="fa fa-pencil margin-r-5"></i> Hobbies</strong>
+
+                                                            <p>
+                                                                <span class="label label-danger">Swimming</span>
+                                                                <span class="label label-success">Cooking</span>
+                                                                <span class="label label-info">Travelling</span>
+                                                                <span class="label label-warning">Driving</span>
+                                                                <span class="label label-primary">Camping</span>
+
+                                                            </p>
+
+                                                        </div>
+                                                        <!-- /.box-body -->
+                                                    </div>
+
+                                                </div>
+                                                <!-- /.box-body -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="information">
+                                <div class="box box-success">
+                                    <div class="box box-solid">
+                                        <div class="box-header with-border">
+                                            <i class="fa fa-info-circle"></i>
+
+                                            <h3 class="box-title"><dt>Voice Centre Brief</dt></h3>
+                                        </div>
+                                        <div class="box-body">
+                                            <!-- /.col -->
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="box-header with-border">
+                                                            <h3 class="box-title">Map to this centre</h3>
+                                                        </div>
+                                                        <div class="box-body">
+                                                            <iframe src="https://www.google.com/maps/d/embed?mid=1P16zI5wBQLpLOjeZ9lpFCWnUYHM" width="340" height="380"></iframe>
+
+
+                                                        </div>
+                                                        <!-- /.box-body -->
+
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-sm-6">
+                                                        <div class="box-header with-border">
+                                                            <h3 class="box-title">About this centre</h3>
+                                                        </div>
+                                                        <!-- /.box-header -->
+                                                        <div class="box-body">
+                                                            <strong><i class="fa fa-book margin-r-5"></i> Background info</strong>
+
+                                                            <p class="text-muted">
+                                                                This centre was started in 2014 to cater for ...........
+                                                            </p>
+
+                                                            <hr>
+
+                                                            <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+                                                            <p class="text-muted">Makina ward, Stara</p>
+
+                                                            <hr>
+                                                            <strong><i class="fa fa-money margin-r-5"></i> Funding Agency</strong>
+
+                                                            <p class="text-muted">Unep</p>
+
+                                                            <hr>
+                                                            <strong><i class="fa fa-database margin-r-5"></i>Objectives</strong>
+
+                                                            <p>
+                                                                <span class="label label-danger">Objective</span>
+                                                                <span class="label label-success">Objective</span>
+                                                                <span class="label label-info">Objective</span>
+                                                                <span class="label label-warning">Objective</span>
+                                                                <span class="label label-primary">Objective</span>
+                                                            </p>
+
+                                                            <hr>
+                                                            <strong><i class="fa fa-list-alt margin-r-5"></i>Activities</strong>
+
+                                                            <p>
+                                                                <span class="label label-danger">Activities</span>
+                                                                <span class="label label-success">Activities</span>
+                                                                <span class="label label-info">Activities</span>
+                                                                <span class="label label-warning">Activities</span>
+                                                                <span class="label label-primary">Activities</span>
+                                                            </p>
+
+
+                                                            <strong><i class="fa fa-line-chart margin-r-5"></i>Achievements</strong>
+
+                                                            <p>
+                                                                <span class="label label-danger">Achievements</span>
+                                                                <span class="label label-success">Achievements</span>
+                                                                <span class="label label-info">Achievements</span>
+                                                                <span class="label label-warning">Achievements</span>
+                                                                <span class="label label-primary">Achievements</span>
+                                                            </p>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- /.row -->
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                            </div>
+
+                            <!-- /.tab-pane -->
                         </div>
-                        <!-- /.box-body -->
-
-                        <!-- /.footer -->
+                        <!-- /.tab-content -->
                     </div>
+
                 </div>
-
-            </div>
-            <!-- /.row -->
-
-            <!-- Second row -->
-
-
-            <div class="row">
-
-                <!-- /.col -->
             </div>
 
-            <div class="row">
-                <?php include('partners.php'); ?>
-            </div>
 
-            <!-- /.row -->
         </section>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+            Developed by <a href="#">Mitchsofts</a>
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2016 <a href="#">Umande Trust</a>.</strong> All rights reserved.
+    </footer>
 
-    <?php include('../footer.php'); ?>
     <!-- Control Sidebar -->
 
-    <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
-
 </div>
-<!-- ./wrapper -->
+
 <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
 <script src="../plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
 <script src="../dist/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
-<!-- page script -->
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <script>
     $(function () {
-        $("#example1").DataTable();
-        $('#example2').DataTable({
-            "paging": true,
-            "lengthChange": true,
-            "lengthMenu": [[5, 10, 20, -1], [5, 10, 20, "All"]],
-            "searching": true,
-            "ordering": false,
-            "info": true,
-            "autoWidth": true
-        });
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace('editor1');
+        //bootstrap WYSIHTML5 - text editor
+        $(".textarea").wysihtml5();
     });
 </script>
-<script src="../scroller/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+<script src="../plugins/chartjs/Chart.min.js"></script>
+<script src="../dist/js/pages/makina.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="../dist/js/demo.js"></script>
+<script src="/scroller/js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     jssor_1_slider_init = function() {
 
@@ -687,6 +612,7 @@
     };
 </script>
 <script type="text/javascript">jssor_1_slider_init();</script>
+
 
 </body>
 </html>
