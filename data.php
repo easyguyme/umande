@@ -63,59 +63,82 @@
 
                                 <tr>
 
+                                    <?php
+                                    $query = $conn->query("select * from demo_data where head='area'");
+                                    while ($row = $query->fetch()) {
 
+                                    ?>
                                     <th>AREA.</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                        <td></td>
+                                    <td><?php echo $row['makina']; ?></td>
+                                    <td><?php echo $row['sara']; ?></td>
+                                    <td><?php echo $row['lindi']; ?></td>
+                                    <td><?php echo $row['laini']; ?></td>
+
+                                    <?php } ?>
+
                                 </tr>
                                 <tr>
+                                    <?php
+                                    $query = $conn->query("select * from demo_data where head='population'");
+                                    while ($row = $query->fetch()) {
 
+                                    ?>
 
                                     <th>POPULATION COMPOSITION.</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                        <td></td>
+                                        <td><?php echo $row['makina']; ?></td>
+                                        <td><?php echo $row['sara']; ?></td>
+                                        <td><?php echo $row['lindi']; ?></td>
+                                        <td><?php echo $row['laini']; ?></td>
+                                    <?php } ?>
                                 </tr>
                                 <tr>
+                                    <?php
+                                    $query = $conn->query("select * from demo_data where head='density'");
+                                    while ($row = $query->fetch()) {
 
+                                    ?>
 
                                     <th>POPULATION DENSITY.</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                        <td></td>
+                                        <td><?php echo $row['makina']; ?></td>
+                                        <td><?php echo $row['sara']; ?></td>
+                                        <td><?php echo $row['lindi']; ?></td>
+                                        <td><?php echo $row['laini']; ?></td>
+                                    <?php } ?>
                                 </tr>
                                 <tr>
+                                    <?php
+                                    $query = $conn->query("select * from demo_data where head='male'");
+                                    while ($row = $query->fetch()) {
 
+                                    ?>
 
                                     <th rowspan="2" >GENDER:</th>
                                     <th><span class="badge bg-red">Male</span></th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
 
+                                        <td><?php echo $row['makina']; ?></td>
+                                        <td><?php echo $row['sara']; ?></td>
+                                        <td><?php echo $row['lindi']; ?></td>
+                                        <td><?php echo $row['laini']; ?></td>
+
+                                    <?php } ?>
                                 </tr>
                                 <tr>
+                                    <?php
+                                    $query = $conn->query("select * from demo_data where head='female'");
+                                    while ($row = $query->fetch()) {
 
+                                    ?>
 
                                     <th><span class="badge bg-green">Female</span></th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                        <td><?php echo $row['makina']; ?></td>
+                                        <td><?php echo $row['sara']; ?></td>
+                                        <td><?php echo $row['lindi']; ?></td>
+                                        <td><?php echo $row['laini']; ?></td>
 
+                                    <?php } ?>
                                 </tr>
 
 
@@ -249,20 +272,34 @@
     var barChartData = {
         labels: ["Makina", "Sarang'ombe", "Lindi", "Laini saba"],
         datasets: [
+            <?php
+            $query = $conn->query("select * from demo_data where head='male'");
+            while ($row = $query->fetch()) {
+            ?>
             {
+
                 label: "Male",
                 backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
                 borderColor: window.chartColors.red,
                 borderWidth: 1,
-                data: [65, 59, 60, 81]
+                data: ['<?php echo $row['makina']; ?>', '<?php echo $row['sara']; ?>', '<?php echo $row['lindi']; ?>','<?php echo $row['laini']; ?>']
+
             },
+            <?php } ?>
+
+            <?php
+            $query = $conn->query("select * from demo_data where head='female'");
+            while ($row = $query->fetch()) {
+            ?>
             {
                 label: "Female",
                 backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                 borderColor: window.chartColors.blue,
                 borderWidth: 1,
-                data: [50, 48, 75, 45]
+                data: ['<?php echo $row['makina']; ?>', '<?php echo $row['sara']; ?>', '<?php echo $row['lindi']; ?>','<?php echo $row['laini']; ?>']
+
             }
+            <?php } ?>
         ]
     };
 

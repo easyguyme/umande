@@ -149,7 +149,7 @@
                     <!-- The time line -->
                     <ul class="timeline">
                         <?php
-                        $query = $conn->query("select * from downloads order by date desc limit 3");
+                        $query = $conn->query("select * from downloads where page='makina' order by date desc limit 3");
                         while ($row = $query->fetch()) {
 
                         ?>
