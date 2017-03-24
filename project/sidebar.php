@@ -11,7 +11,7 @@
             <div class="pull-left info">
                 <p>Umande Trust</p>
                 <!-- Status -->
-                <a href="../index.php"><i class="fa fa-circle text-success"></i> New Dawn:Nascent start</a>
+                <a href="index.php"><i class="fa fa-circle text-success" style="font-size: x-small"></i> Innovative Solutions:<br>Sustainable Communities</a>
             </div>
         </div>
 
