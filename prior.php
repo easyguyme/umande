@@ -59,64 +59,23 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                $query = $conn->query("select * from prior_county where page='makina'");
+                                while ($row = $query->fetch()) {
 
+                                ?>
                                 <tr>
-
-                                    <td>1</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>2</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>3</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>4</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>5</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><?php echo $row['id']; ?></td>
+                                    <td><?php echo $row['makina']; ?></td>
+                                    <td><?php echo $row['sara']; ?></td>
+                                    <td><?php echo $row['lindi']; ?></td>
+                                    <td><?php echo $row['laini']; ?></td>
 
 
 
                                 </tr>
 
-
+                                                            <?php };  ?>
                                 </tbody>
                             </table>
 
@@ -154,62 +113,24 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                $query = $conn->query("select * from prior_com where page='makina'");
+                                while ($row = $query->fetch()) {
 
-                                <tr>
-
-                                    <td>1</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>2</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                ?>
+                                    <tr>
+                                        <td><?php echo $row['id']; ?></td>
+                                        <td><?php echo $row['makina']; ?></td>
+                                        <td><?php echo $row['sara']; ?></td>
+                                        <td><?php echo $row['lindi']; ?></td>
+                                        <td><?php echo $row['laini']; ?></td>
 
 
 
-                                </tr>
-                                <tr>
+                                    </tr>
 
-                                    <td>3</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                <?php };  ?>
 
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>4</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>5</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-
-
-
-                                </tr>
 
 
                                 </tbody>
@@ -247,7 +168,7 @@
     </div>
     <!-- /.content-wrapper -->
 
-    <?php include('../footer.php'); ?>
+    <?php include('footer.php'); ?>
     <!-- Control Sidebar -->
 
     <!-- /.control-sidebar -->

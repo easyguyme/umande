@@ -185,62 +185,7 @@
                 <!-- /.col -->
             </div>
             <div class="row">
-                <h2 class="page-header text-center"><dt>OUR PARTNERS</dt></h2>
-                <div class="box-default">
-                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
-                        <!-- Loading Screen -->
-                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('scroller/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                        </div>
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
-                            <div>
-                                <img data-u="image" src="../scroller/img/13.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/14.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/12.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/11.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/10.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/9.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/8.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/7.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/6.PNG" />
-                            </div>
-                            <a data-u="any" href="http://www.jssor.com" style="display:none">Our Partners</a>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/5.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/4.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/3.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/1.PNG" />
-                            </div>
-                            <div style="display: none;">
-                                <img data-u="image" src="../scroller/img/2.PNG" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              <?php include "partners.php";?>
             </div>
 
             <!-- /.row -->
