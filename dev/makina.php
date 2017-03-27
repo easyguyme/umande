@@ -59,44 +59,18 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php
+                                $query = $conn->query("select * from dev_proj where page='makina' ");
+                                while ($row = $query->fetch()) {
 
+                                ?>
                                 <tr>
-                                    <th>1.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>2.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>3.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>4.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>5.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>6.</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th>7.</th>
-                                    <td></td>
-                                    <td></td>
+                                    <th><?php echo $row['id']; ?></th>
+                                    <td><?php echo $row['planned']; ?></td>
+                                    <td><?php echo $row['ongoing']; ?></td>
                                 </tr>
 
-
+                                <?php };?>
 
 
 
@@ -130,16 +104,21 @@
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Go Back</a></li>
                                 </ul>
                             </li>
-                            <li class="pull-left header"><i class="fa fa-cubes"></i> Project status</li>
+                            <li class="pull-left header"><i class="fa fa-cubes"></i><dt> Project status</dt></li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab_1-1">
+                                <?php
+                                $query = $conn->query("select * from proj_status where page='makina' and body='county'");
+                                while ($row = $query->fetch()) {
+                                $id = $row['id'];
+                                ?>
                                 <div class="progress-group">
                                     <span class="progress-text"><i class="fa fa-tint"></i>Water</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['water']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['water']; ?>%">
                                             <span class="sr-only">60% Complete</span>
                                         </div>
                                     </div>
@@ -147,10 +126,10 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <span class="progress-text"><i class="fa fa-hospital-o"></i>Health</span>
-                                    <span class="progress-number"><b>50%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['health']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['health']; ?>%">
                                             <span class="sr-only">50% Complete</span>
                                         </div>
                                     </div>
@@ -158,10 +137,10 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <i class="fa fa-university"></i>Education</span>
-                                    <span class="progress-number"><b>30%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['education']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['education']; ?>%">
                                             <span class="sr-only">30% Complete</span>
                                         </div>
                                     </div>
@@ -169,20 +148,20 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <i class="fa fa-recycle"></i>Sanitation</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['sanitation']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['sanitation']; ?>%">
                                             <span class="sr-only">40% Complete</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="progress-group">
                                     <i class="fa fa-trash"></i>Solid Waste</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['waste']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['waste']; ?>%">
                                             <span class="sr-only">60% Complete</span>
                                         </div>
                                     </div>
@@ -190,10 +169,10 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <i class="fa fa-ship"></i>Drainage</span>
-                                    <span class="progress-number"><b>70%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['drain']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['drain']; ?>%">
                                             <span class="sr-only">70% Complete</span>
                                         </div>
                                     </div>
@@ -201,10 +180,10 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <i class="fa fa-sun-o"></i>Energy</span>
-                                    <span class="progress-number"><b>80%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['energy']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['energy']; ?>%">
                                             <span class="sr-only">80% Complete</span>
                                         </div>
                                     </div>
@@ -212,193 +191,209 @@
                                 <!-- /.progress-group -->
                                 <div class="progress-group">
                                     <i class="fa fa-road"></i>Roads</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <span class="progress-number"><b><?php echo $row['road']; ?>%</b> Complete</span>
 
                                     <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['road']; ?>%">
                                             <span class="sr-only">40% Complete</span>
                                         </div>
                                     </div>
                                 </div>
+                                <?php };?>
                             </div>
+
                             <!-- /.tab-pane -->
-                            <div class="tab-pane" id="tab_2-2">
-                                <div class="progress-group">
-                                    <span class="progress-text"><i class="fa fa-tint"></i>Water</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                            <div class="tab-pane " id="tab_2-2">
+                                <?php
+                                $query = $conn->query("select * from proj_status where page='makina' and body='cbo'");
+                                while ($row = $query->fetch()) {
+                                    $id = $row['id'];
+                                    ?>
+                                    <div class="progress-group">
+                                        <span class="progress-text"><i class="fa fa-tint"></i>Water</span>
+                                        <span class="progress-number"><b><?php echo $row['water']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['water']; ?>%">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <span class="progress-text"><i class="fa fa-hospital-o"></i>Health</span>
-                                    <span class="progress-number"><b>50%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text"><i class="fa fa-hospital-o"></i>Health</span>
+                                        <span class="progress-number"><b><?php echo $row['health']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                            <span class="sr-only">50% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['health']; ?>%">
+                                                <span class="sr-only">50% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-university"></i>Education</span>
-                                    <span class="progress-number"><b>30%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-university"></i>Education</span>
+                                        <span class="progress-number"><b><?php echo $row['education']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                            <span class="sr-only">30% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['education']; ?>%">
+                                                <span class="sr-only">30% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-recycle"></i>Sanitation</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-recycle"></i>Sanitation</span>
+                                        <span class="progress-number"><b><?php echo $row['sanitation']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['sanitation']; ?>%">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="progress-group">
-                                    <i class="fa fa-trash"></i>Solid Waste</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                                    <div class="progress-group">
+                                        <i class="fa fa-trash"></i>Solid Waste</span>
+                                        <span class="progress-number"><b><?php echo $row['waste']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['waste']; ?>%">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-ship"></i>Drainage</span>
-                                    <span class="progress-number"><b>70%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-ship"></i>Drainage</span>
+                                        <span class="progress-number"><b><?php echo $row['drain']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                            <span class="sr-only">70% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['drain']; ?>%">
+                                                <span class="sr-only">70% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-sun-o"></i>Energy</span>
-                                    <span class="progress-number"><b>80%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-sun-o"></i>Energy</span>
+                                        <span class="progress-number"><b><?php echo $row['energy']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['energy']; ?>%">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-road"></i>Roads</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-road"></i>Roads</span>
+                                        <span class="progress-number"><b><?php echo $row['road']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['road']; ?>%">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php };?>
                             </div>
+
                             <!-- /.tab-pane -->
-                            <div class="tab-pane" id="tab_3-2">
-                                <div class="progress-group">
-                                    <span class="progress-text"><i class="fa fa-tint"></i>Water</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                            <div class="tab-pane " id="tab_3-2">
+                                <?php
+                                $query = $conn->query("select * from proj_status where page='makina' and body='ngo'");
+                                while ($row = $query->fetch()) {
+                                    $id = $row['id'];
+                                    ?>
+                                    <div class="progress-group">
+                                        <span class="progress-text"><i class="fa fa-tint"></i>Water</span>
+                                        <span class="progress-number"><b><?php echo $row['water']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['water']; ?>%">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <span class="progress-text"><i class="fa fa-hospital-o"></i>Health</span>
-                                    <span class="progress-number"><b>50%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text"><i class="fa fa-hospital-o"></i>Health</span>
+                                        <span class="progress-number"><b><?php echo $row['health']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                            <span class="sr-only">50% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['health']; ?>%">
+                                                <span class="sr-only">50% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-university"></i>Education</span>
-                                    <span class="progress-number"><b>30%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-university"></i>Education</span>
+                                        <span class="progress-number"><b><?php echo $row['education']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                            <span class="sr-only">30% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['education']; ?>%">
+                                                <span class="sr-only">30% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-recycle"></i>Sanitation</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-recycle"></i>Sanitation</span>
+                                        <span class="progress-number"><b><?php echo $row['sanitation']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['sanitation']; ?>%">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="progress-group">
-                                    <i class="fa fa-trash"></i>Solid Waste</span>
-                                    <span class="progress-number"><b>60%</b> Complete</span>
+                                    <div class="progress-group">
+                                        <i class="fa fa-trash"></i>Solid Waste</span>
+                                        <span class="progress-number"><b><?php echo $row['waste']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['waste']; ?>%">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-ship"></i>Drainage</span>
-                                    <span class="progress-number"><b>70%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-ship"></i>Drainage</span>
+                                        <span class="progress-number"><b><?php echo $row['drain']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                            <span class="sr-only">70% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['drain']; ?>%">
+                                                <span class="sr-only">70% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-sun-o"></i>Energy</span>
-                                    <span class="progress-number"><b>80%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-sun-o"></i>Energy</span>
+                                        <span class="progress-number"><b><?php echo $row['energy']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['energy']; ?>%">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.progress-group -->
-                                <div class="progress-group">
-                                    <i class="fa fa-road"></i>Roads</span>
-                                    <span class="progress-number"><b>40%</b> Complete</span>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <i class="fa fa-road"></i>Roads</span>
+                                        <span class="progress-number"><b><?php echo $row['road']; ?>%</b> Complete</span>
 
-                                    <div class="progress progress-sm active">
-                                        <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete</span>
+                                        <div class="progress progress-sm active">
+                                            <div class="progress-bar progress-bar-aqua progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['road']; ?>%">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php };?>
                             </div>
+
                             <!-- /.tab-pane -->
                         </div>
                         <!-- /.tab-content -->
